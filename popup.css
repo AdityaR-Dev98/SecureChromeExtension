@@ -1,0 +1,66 @@
+/* popup.css */
+body {
+    width: 300px;
+    height: 500px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-content, .options-content {
+    text-align: center;
+    width: 90%;
+  }
+  
+  h1, h2 {
+    font-size: 1.4em;
+    color: #0073e6;
+  }
+  
+  .button-container, #threat-history, #actions, .scan-options {
+    margin-top: 15px;
+  }
+  
+  .button-container, .scan-options {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  button {
+    flex: 1;
+    padding: 10px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  #status {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Notifications toggle */
+  label {
+    font-size: 1em;
+    color: #333;
+  }
+  

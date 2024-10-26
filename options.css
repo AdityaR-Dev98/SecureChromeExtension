@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 20px;
+    background-color: #f4f6f8;
+    font-size: 14px;
+}
+
+.options-content {
+    text-align: left;
+}
+
+h1 {
+    font-size: 1.4em;
+    color: #0073e6;
+}
+
+label {
+    font-size: 0.9em;
+    color: #333;
+}
+
+select, input[type="checkbox"] {
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#status-message {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing & Malware Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-content">
+    <h1>Phishing and Malware Detector</h1>
+    <p>Protecting your browsing experience.</p>
+    
+    <!-- Button container for Start Scan and Options -->
+    <div class="button-container">
+      <button id="scan-button">Start Scan</button>
+      <button id="options-button">Options</button>
+    </div>
+    
+    <p id="status">Status: Idle</p>
+    
+    <!-- Threat History and Actions Section -->
+    <h2>Threat History</h2>
+    <div id="threat-history">
+      <p>No threats detected yet.</p>
+    </div>
+
+    <h2>Actions</h2>
+    <div id="actions">
+      <button id="clear-history-button">Clear History</button>
+    </div>
+  </div>
+  
+  <div class="options-content hidden">
+    <h2>Select Scan Type</h2>
+    <button id="back-button">Back to Main</button>
+    
+    <div class="scan-options">
+      <button class="scan-option" data-scan="quick">Quick Scan</button>
+      <button class="scan-option" data-scan="full">Full Scan</button>
+      <button class="scan-option" data-scan="custom">Custom Scan</button>
+    </div>
+    
+    <p id="selected-scan">Current scan type: <span id="scan-type">Quick</span></p>
+    
+    <!-- Enable Notifications Option -->
+    <h2>Settings</h2>
+    <label>
+      <input type="checkbox" id="notifications-toggle"> Enable Notifications
+    </label>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
